@@ -1,0 +1,71 @@
+---
+title: M
+description: Mangler
+---
+<section class="hero">
+	<div class="text-container">
+		<h2 class="subtext editable">Ønsker du at være
+med til at udvikle morgendagens sunde samfund?
+I samarbejde med forskere, læger, patienter, politikere m.fl. skaber vi fremtidens samfund med musik.</h2>
+			
+			
+			
+
+
+
+
+
+		</div>
+	</div>
+</section>
+
+<section class="splash">
+<img src="/images/splash.jpg" alt="Musik & Sundhed" class="screenshot editable" />
+</section>
+
+<div class="content">
+	<section>
+		<div class="container flex">
+			
+				<div class="center-text subtext">
+				<h2>Lorem dolor ipsum <strong>double</strong> Lorem dolor ipsum?</h2>
+				<p>Lorem dolor ipsum lorem. Lorem dolor ipsum lorem, Lorem dolor ipsum lorem Lorem dolor ipsum lorem Lorem dolor ipsum lorem Lorem dolor ipsum lorem. </p>
+			</div>
+		</div>
+	</section>
+
+
+<div class="content">
+	<section>
+		<div class="container flex">
+			<div class="image">
+				<img src="/images/splash.jpg" alt="Screenshot" class="screenshot editable" />
+			</div>
+				<div class="text editable">
+				<h2>Lorem dolor ipsum <strong>double</strong> Lorem dolor ipsum?</h2>
+				<p>Lorem dolor ipsum lorem. Lorem dolor ipsum lorem, Lorem dolor ipsum lorem Lorem dolor ipsum lorem Lorem dolor ipsum lorem Lorem dolor ipsum lorem. </p>
+			</div>
+		</div>
+	</section>
+
+	<div class="content" style="background-color: #da4926; margin-top: 3%; ">
+	<section>
+		<div class="container latest-blogpost flex">
+			
+				<div class="text editable" style="color: #fff;">
+				<h2>Gå til de <strong>seneste</strong> indlæg</h2>
+				
+							{% for post in site.posts limit:3  %}
+{% if forloop %}
+  <li>
+    <a href="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
+{% endif %}
+{% endfor %}
+			</div>
+		</div>
+	</section>
+
+
+
+</div>

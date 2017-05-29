@@ -1,0 +1,10 @@
+
+- name: Tænketank
+  link: /blog/
+  new_window: false
+  highlight: false
+- name: Panel
+  link: /about/
+  new_window: false
+  highlight: false
+
